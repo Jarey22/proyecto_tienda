@@ -15,7 +15,7 @@ conexion.connect(function(err){
     }
 });
 //para que finalice la conexion y no gaste memoria ram
-//conexion.end();
+//conexion.end(); // crl + c para cerrar la terminal
 
 const categoria ="SELECT * FROM category"
 
