@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image:url(/assets/img/open_inicio.jpg);/* Esto es para tener una imagen de fondo*/
+    background-image:url(../img/open_inicio.jpg);/* Esto es para tener una imagen de fondo*/
     background-size: cover; /*El background cover hace que la imagen se adapte sin estirarla*/
     background-repeat: no-repeat; /*Esto hace que no se repita mas de una vez*/
     background-position: center; /*Hace que la imagen se centre*/
