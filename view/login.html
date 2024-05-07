@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <title>Login y Registro</title>
+</head>
+<body>
+    <main>
+        <!--Contenedor de tod-->
+        <div class="contenedor_todo">
+<!--Contenedor caja-->
+          <div class="caja_trasera">
+                <div class="caja_login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesion para ingresar</p>
+                    <button id="btn_iniciar_sesion">Iniciar sesión</button>
+                </div>
+                
+                <div class="caja_registrar">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>Ingresa tus datos para crear una cuenta</p>
+                    <button id="btn_registrarse">Registrarse</button>
+                </div>
+          </div>  
+          <!---Contenedor de los dos formularios--->
+                <div class="contenedor_login_registrar">
+                    <!---Formulario de Login--->
+                    <form action="" class="formulario_login">
+                            <h2>Iniciar Sesión</h2>
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Contraseña">
+                            <button type="submit" id="ingresar_pagina">Ingresar</button>
+                    </form>
+                <!---Formulario de Registrarse--->
+                    <form action="" class="formulario_registrarse">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre Completo">
+                        <input type="email" placeholder="Ingresar Email">
+                        <input type="password" placeholder="Ingresar Contraseña">
+                        <button type="submit" id="ingresar_registro">Regístrarse</button>
+                </form>
+                            
+                </div>
+        </div>
+    </main>
+    <script src="/assets/js/login.js"></script>
+    <script src="/controller/registrar.js"></script>
+</body>
+</html>

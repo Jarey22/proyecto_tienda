@@ -1,0 +1,296 @@
+body{
+    background:linear-gradient(#505BDA,#46a2df);
+}
+/*efecto de burbujas*/
+.burbuja{
+border-radius: 50% ;
+background:#fff;
+opacity: .3;
+position: absolute;
+bottom: 0;
+
+animation: burbujas 3s linear infinite;
+}
+.burbuja:nth-child(1){ /*selecciona uno o más elementos en función de su posición entre un grupo de hermanos, contando desde el final.*/
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration: 3s;
+}
+.burbuja:nth-child(2){ /*selecciona uno o más elementos en función de su posición entre un grupo de hermanos, contando desde el final.*/
+    width: 60px;
+    height: 60px;
+    left: 20%;
+    animation-duration: 4s;
+}
+.burbuja:nth-child(3){ 
+    width: 50px;
+    height: 50px;
+    left: 65%;
+    animation-duration: 5s;
+}
+.burbuja:nth-child(4){ 
+    width: 80px;
+    height: 80px;
+    left: 80%;
+    animation-duration: 10s;
+}
+.burbuja:nth-child(5){ 
+    width: 20px;
+    height: 20px;
+    left: 95%;
+    animation-duration: 3s;
+}
+.burbuja:nth-child(6){ 
+    width: 100px;
+    height: 100px;
+    left: 40%;
+    animation-duration: 9s;
+}
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity:0 ;
+    }
+    50%{
+        opacity:.4;
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+
+
+/*demas contenido de la pagina*/
+.texto_inicial{
+    margin-top: 100px;
+    font-size: 20px;
+    margin-left: 20px;
+    color: azure;
+}
+.texto_inicial h2{
+    font-size: 38px;   
+}
+
+/*categorias*/
+.categorias{
+    position:absolute;
+    left: 580px;
+    top: 180px;
+}
+.categorias button{
+    outline: none;
+    cursor: pointer;
+    background: azure;
+    border-radius: 20px;
+    padding-right: 5px;
+    align-items: center;
+    width: 200px;
+    border: none;
+    margin-left: 10px;
+    
+}
+.categorias button:hover{
+    background:#D7FFAB ;
+    color: black;
+}
+.categorias img{
+    position: relative;
+    padding: 0 auto;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-left: 5px;
+}
+.categorias p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.marcas{
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+.marcas h3{
+    padding-top:15px;
+    padding-bottom: 25px;
+    text-align: center;
+    color: azure;
+}
+.marcas button{
+    position: relative;
+    left: 350px;
+    width: 180px;
+    height: 180px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.marcas button:hover{
+    background:#D7FFAB;
+    color: black;
+}
+.marcas img{
+    border-radius: 20px;
+}
+.marcas p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.contenedor_carrusel_laptops{
+    background-color: azure;
+}
+.contenedor_carrusel_pcgamer{
+    background-color: azure;
+}
+
+
+/*parte del carrusel*/
+.contenedor_carrusel_laptops{
+    margin-bottom: 50px;
+}
+
+.carrusel{
+width: 90%;
+max-width: 120em;
+padding: 2em;
+background: azure;
+position: relative;
+left: 50px;
+overflow: hidden;
+border-radius: 20px;
+height: 580px;
+}
+.carrusel h3{
+    font-size: 25px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.carrusel img{
+    padding: 0 5px;
+    border-radius: 10px;
+}
+.carrusel .grande{
+  width:200% ;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  /*justify-content: space-between;*/
+  align-items: center;
+  
+  transition: all .5s ease;
+  transform: translateX(0%); /*transicion en el eje X*/
+}
+.carrusel .img{
+    width: calc(100% / 4 -2em);
+    min-height:10vh ;
+    background-color: red;
+}
+.carrusel .puntos{
+   width: 100%;
+   background-color: #252525; 
+   border-radius: 20px;
+   padding:.4em;
+   margin-top: 100px;
+   margin: 1em 0 0 ;
+   display:flex ;
+   flex-flow: row nowrap;
+   justify-content: center;
+   align-items: center;
+}
+.carrusel .punto{
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    background-color: #505BDA;
+    border-radius: 50%;
+    cursor: pointer;
+    list-style: none; /*sirve para quitarle los puntos a los elementos li de html*/
+}
+.carrusel .punto.activo{
+    background-color: #D7FFAB;
+}
+
+/*Carrusel1 */
+
+.contenedor_carrusel_perifericos{
+    margin-bottom: 50px;
+}
+.carrusel .grande1{
+  width:200% ;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  /*justify-content: space-between;*/
+  align-items: center;
+  
+  transition: all .5s ease;
+  transform: translateX(0%); /*transicion en el eje X*/
+}
+.carrusel .punto1{
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    background-color: #505BDA;
+    border-radius: 50%;
+    cursor: pointer;
+    list-style: none; /*sirve para quitarle los puntos a los elementos li de html*/
+}
+.carrusel .punto1.activo{
+    background-color: #D7FFAB;
+}
+
+/*Carrusel2 */
+.contenedor_carrusel_pcgamer{
+    margin-bottom: 50px;
+}
+.carrusel .grande2{
+  width:200% ;
+  
+  display: flex;
+  flex-flow: row nowrap;
+  /*justify-content: space-between;*/
+  align-items: center;
+  
+  transition: all .5s ease;
+  transform: translateX(0%); /*transicion en el eje X*/
+}
+.carrusel .punto2{
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    background-color: #505BDA;
+    border-radius: 50%;
+    cursor: pointer;
+    list-style: none; /*sirve para quitarle los puntos a los elementos li de html*/
+}
+.carrusel .punto2.activo{
+    background-color: #D7FFAB;
+}
+
+/*footer de la pagina*/
+footer{
+    background:#252525;
+    text-align: center;
+    color: azure;  
+}
+.content-footer{
+    padding-top: 20px;
+    font-size: 15px;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 30px ;
+    border-bottom: 1px solid white;
+}
+.content-foo h4{
+    color: white;
+    border-bottom: solid  rgba(0, 128, 225, 0.5);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
