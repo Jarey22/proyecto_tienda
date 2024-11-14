@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/registro.css">
+    <title>Registro de satisfaccion</title>
+</head>
+<body> 
+    <div class="encuesta">
+        <h1>Satisfacción </h1>
+        <form action="/validar" method="post">
+            <p>Nombre</p>
+            <input type="text" name="nom" id="nom"><br>
+            <p>Apellido</p>
+            <input type="text" name="apell" id="apell"><br>
+            <p>De 1 a 5 califique su satisfacción</p>
+            <input type="number" name="punt" id="punt"><br>
+            <p>Email</p>
+            <input type="email" name="email_e" id="email_e"><br>
+            <p>Escriba un comentario</p>
+            <input type="text" name="comentario" id="comentario"><br><br>
+            <input type="submit" value="Registrar" id="btn_encuesta">
+        </form>
+    </div>
+</body>
+</html>

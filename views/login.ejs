@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/login.css" type="text/css">
+    <title>Login y Registro</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+        <a href="/login"><i class="fa-solid fa-user" style="color: azure;" id="user"></i></a>
+        </ul>   
+        </nav>
+    </header>
+    <main>
+        <!--Contenedor de tod-->
+        <div class="contenedor_todo">
+<!--Contenedor caja-->
+          <div class="caja_trasera">
+                <div class="caja_login">
+                    <h3>¿Ya tienes una cuenta?</h3>
+                    <p>Inicia sesion para ingresar</p>
+                    <button id="btn_iniciar_sesion">Iniciar sesión</button>
+                </div>
+                
+                <div class="caja_registrar">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>Ingresa tus datos para crear una cuenta</p>
+                    <button id="btn_registrarse">Registrarse</button>
+                </div>
+          </div>  
+          <!---Contenedor de los dos formularios--->
+                <div class="contenedor_login_registrar">
+                    <!---Formulario de Login--->
+                    <form action="" class="formulario_login">
+                            <h2>Iniciar Sesión</h2>
+                            <input type="email" placeholder="Email" name="email_ingreso" id="email_ingreso">
+                            <input type="password" placeholder="Contraseña" name="passw_ingreso" id="passw_ingreso">
+                            <a href="/"><i class="fa-solid fa-house" id="home"></i>
+                            <input type="submit" id="ingresar_pagina" value="Ingresar"></input>
+                            </a>
+                            
+                    </form>
+                <!---Formulario de Registrarse--->
+                    <form action="/validar" method="post" class="formulario_registrarse">
+                        <h2>Regístrarse</h2>
+                        <input type="number"  placeholder="Numero de identificacion" name="cedula_registro" id="cedula_registro">
+                        <input type="text" placeholder="Nombre de Usuario" name="usuario_registro" id="usuario_registro" >
+                        <input type="text" placeholder="Nombre Completo" name="nombre_registro" id="nombre_registro">
+                        <input type="email" placeholder="Ingresar Email" name="email_registro" id="email_registro">
+                        <input type="password" placeholder="Ingresar Contraseña" name="passw_registro" id="passw_registro">
+                        <input type="submit" id="ingresar_registro" value="Registrar" ></input>
+                </form>
+                            
+                </div>
+        </div>
+    </main>
+    <script src="./assets/js/login.js"></script>
+</body>
+</html>
